@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS topics (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(150) NOT NULL,
+    message TEXT NOT NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    status VARCHAR(30) NOT NULL DEFAULT 'ABIERTO',
+    author VARCHAR(100) NOT NULL,
+    course VARCHAR(100) NOT NULL,
+    CONSTRAINT uk_topic_title_message UNIQUE (title, message)
+);
