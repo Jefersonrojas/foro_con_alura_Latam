@@ -27,5 +27,3 @@ Este proyecto tiene como objetivo construir una **API REST** para un sistema de 
 
 ---
 
-## 📂 Estructura del proyecto
-
